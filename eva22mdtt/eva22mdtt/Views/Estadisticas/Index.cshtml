@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Estadisticas";
+    Layout = "~/Views/Shared/PlantillaParaTodo.cshtml";
+}
+
+<h2>Estadisticas</h2>
+
+
+<h5>Porcentaje de Productos por Categoria</h5>
+
+<table class="table">
+    <tr>
+        <th>
+            Categoría
+        </th>
+        <th>
+            Porcentaje del total
+        </th>
+    </tr>
+    @for (int i = 0; i < ViewBag.NumCategorias; i++)
+    {
+        <tr>
+            <td>
+                @ViewBag.IdCategorias[i]
+            </td>
+            <td>
+                @ViewBag.ListaPorcentajeCat[i]%
+            </td>
+        </tr>
+
+    }
+</table>
+
+<h5>Precio Promedio por Categoria</h5>
+
+<table class="table">
+    <tr>
+        <th>
+            Categoría
+        </th>
+        <th>
+            Precio Promedio
+        </th>
+    </tr>
+    @for (int i = 0; i < ViewBag.ListaPrecioPromedioCant; i++)
+    {
+        <tr>
+            <td>
+                @ViewBag.IdCategorias[i]
+            </td>
+            <td>
+                @ViewBag.ListaPrecioPromedio[i]
+            </td>
+        </tr>
+
+    }
+</table>
