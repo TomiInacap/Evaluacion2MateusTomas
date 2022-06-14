@@ -14,8 +14,8 @@ namespace eva22mdtt.Controllers
 {
     public class CategoriasController : Controller
     {
-        //private bddMDTTEntities2 db = new bddMDTTEntities2();
-        private bddMDTTEntitiesEva2 db = new bddMDTTEntitiesEva2();
+        private bddMDTTEntities2 db = new bddMDTTEntities2();
+        //private bddMDTTEntitiesEva2 db = new bddMDTTEntitiesEva2();
 
 
         // GET: Categorias

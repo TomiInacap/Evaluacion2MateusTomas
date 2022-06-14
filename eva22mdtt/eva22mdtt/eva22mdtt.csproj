@@ -174,6 +174,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModeloEvaluacion2MDTT.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\multiple.cs" />
     <Compile Include="Models\Producto.cs">
       <DependentUpon>Modelo2Eval2.tt</DependentUpon>
     </Compile>
@@ -258,9 +259,11 @@
     <Content Include="Views\Productoes\Details.cshtml" />
     <Content Include="Views\Productoes\Index.cshtml" />
     <Content Include="Views\Productoes\Edit.cshtml" />
-    <Content Include="Views\Busquedas\Details.cshtml" />
-    <Content Include="Views\Busquedas\Index.cshtml" />
+    <Content Include="Views\Busquedas\Index2.cshtml" />
     <Content Include="Views\Estadisticas\Index.cshtml" />
+    <Content Include="Views\Busquedas\Index3.cshtml" />
+    <Content Include="Views\Busquedas\Index4.cshtml" />
+    <Content Include="Views\Busquedas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

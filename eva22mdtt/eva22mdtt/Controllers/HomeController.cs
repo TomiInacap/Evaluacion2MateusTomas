@@ -20,24 +20,8 @@ namespace eva22mdtt.Controllers
         public ActionResult Index()
         {
 
-            ViewBag.StockTotal = "SELECT SUM(stock) FROM Producto ";
-
-            Producto producto = new Producto();
-
-
-
-            ViewBag.teste = producto.precio;
-
-            //SqlCommand cmd = new SqlCommand(ViewBag.StockTotal, bddMDTTEntities2);
-
-
-
-
             return View();
         }
-
-
-
 
 
     }

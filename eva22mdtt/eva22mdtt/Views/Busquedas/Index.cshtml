@@ -1,4 +1,4 @@
-﻿@model IEnumerable<eva22mdtt.Models.Producto>
+﻿@model IEnumerable<eva22mdtt.Models.multiple>
 
 @{
     ViewBag.Title = "Busquedas";
@@ -7,54 +7,35 @@
 
 <h2>Busquedas</h2>
 <h3>Listado de Productos por Categorias</h3>
-<h4> </h4>
-<p> </p>
+<br>
 
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.descripcion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.precio)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.stock)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.estado)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Categoria.nombre)
-        </th>
-        <th></th>
+        <th>ID Categoria</th>
+        <th>N.Categorias</th>
+        <th> </th>
+        <th> </th>
+        <th> </th>
+        <th>ID Producto</th>
+        <th>Nombre Producto</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+        <th>Stock</th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.descripcion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.precio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.stock)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.estado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Categoria.nombre)
-        </td>
-
-    </tr>
-}
-
+    @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.cates.idCategoria</td>
+                    <td>@item.cates.nombre</td>
+                    <td> -- </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>@item.prods.idProducto</td>
+                    <td>@item.prods.nombre</td>
+                    <td>@item.prods.descripcion</td>
+                    <td>@item.prods.precio</td>
+                    <td>@item.prods.stock</td>
+                </tr>
+            }
 </table>

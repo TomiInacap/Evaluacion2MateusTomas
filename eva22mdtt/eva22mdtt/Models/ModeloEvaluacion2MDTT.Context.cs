@@ -10,6 +10,7 @@
 namespace eva22mdtt.Models
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
@@ -27,5 +28,8 @@ namespace eva22mdtt.Models
     
         public virtual DbSet<Categoria> Categoria { get; set; }
         public virtual DbSet<Producto> Producto { get; set; }
+
+
+
     }
 }

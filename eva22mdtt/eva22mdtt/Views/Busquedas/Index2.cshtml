@@ -1,0 +1,61 @@
+﻿@model IEnumerable<eva22mdtt.Models.Producto>
+
+@{
+    ViewBag.Title = "Busquedas";
+    Layout = "~/Views/Shared/PlantillaParaTodo.cshtml";
+}
+
+<h2>Busquedas</h2>
+<h3>Listado de Productos por Categorias</h3>
+<br>
+
+<table class="table">
+    <tr>
+        <th>
+            Nombre Categoria  
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.stock)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estado)
+            </td>
+
+
+        </tr>
+    }
+
+</table>

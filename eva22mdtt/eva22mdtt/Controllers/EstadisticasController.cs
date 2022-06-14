@@ -16,7 +16,8 @@ namespace eva22mdtt.Controllers
         // GET: Estadisticas
         public ActionResult Index()
         {
-            bddMDTTEntitiesEva2 db = new bddMDTTEntitiesEva2();
+            //bddMDTTEntitiesEva2 db = new bddMDTTEntitiesEva2();
+            bddMDTTEntities2 db = new bddMDTTEntities2();
 
             IEnumerable<Categoria> categoriaQuery = from categoria in db.Categoria select categoria;
             IEnumerable<Producto> productoQuery = from producto in db.Producto select producto;

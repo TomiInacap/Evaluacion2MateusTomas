@@ -14,8 +14,8 @@ namespace eva22mdtt.Controllers
 {
     public class ProductoesController : Controller
     {
-        //private bddMDTTEntities2 db = new bddMDTTEntities2();
-        private bddMDTTEntitiesEva2 db = new bddMDTTEntitiesEva2();
+        private bddMDTTEntities2 db = new bddMDTTEntities2();
+        //private bddMDTTEntitiesEva2 db = new bddMDTTEntitiesEva2();
 
         // GET: Productoes
         public async Task<ActionResult> Index()

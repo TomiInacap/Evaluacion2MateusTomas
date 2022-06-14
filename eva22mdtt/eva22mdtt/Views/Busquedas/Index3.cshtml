@@ -1,0 +1,66 @@
+﻿@model IEnumerable<eva22mdtt.Models.Modelo2Eval2>
+
+@{
+    ViewBag.Title = "Busquedas";
+    Layout = "~/Views/Shared/PlantillaParaTodo.cshtml";
+}
+
+<h2>Busquedas</h2>
+<h3>Listado de Productos por Categorias</h3>
+<br>
+
+<table class="table">
+    <tr>
+        <th>
+            N.Categoria
+        </th>
+        <th>
+            ID Producto
+        </th>
+        <th>
+            Nombre Producto
+        </th>
+        <th>
+            Descripcion
+        </th>
+        <th>
+            Precio
+        </th>
+        <th>
+            Stock
+        </th>
+
+
+
+        <th></th>
+    </tr>
+
+    <tr>
+        @for (int i = 0; i < ViewBag.listaICcat; i++)
+        {
+        <tr>
+            <td>
+                @ViewBag.listaNcat[i]
+            </td>
+            <td>
+                @Html.DisplayFor(idProducto)
+            </td>
+            <td>
+                @ViewBag.listaNcat[i]
+            </td>
+            <td>
+                @ViewBag.listaNcat[i]
+            </td>
+            <td>
+                @ViewBag.listaNcat[i]
+            </td>
+            <td>
+                @ViewBag.listaNcat[i]
+            </td>
+
+
+
+        </tr>
+    }
+
+    </table>
